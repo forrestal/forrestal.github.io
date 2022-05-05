@@ -113,10 +113,6 @@
 		}
 
 	a {
-		-moz-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-webkit-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		-ms-transition: color 0.2s ease, border-bottom-color 0.2s ease;
-		transition: color 0.2s ease, border-bottom-color 0.2s ease;
 		text-decoration: none;
 		border-bottom: dotted 1px;
 		color: inherit;
@@ -920,10 +916,6 @@
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		-moz-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
-		-webkit-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
-		-ms-transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
-		transition: background-color 0.2s ease, box-shadow 0.2s ease, color 0.2s ease;
 		-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 		background-color: transparent;
 		border-radius: 8px;
@@ -1194,19 +1186,11 @@
 		-webkit-justify-content: center;
 		-ms-justify-content: center;
 		justify-content: center;
-		-moz-transition: opacity 0.5s ease, -moz-transform 0.5s ease;
-		-webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
-		-ms-transition: opacity 0.5s ease, -ms-transform 0.5s ease;
-		transition: opacity 0.5s ease, transform 0.5s ease;
 		max-width: calc(100vw - 6em);
 		width: 86em;
 	}
 
 		.panel > .image {
-			-moz-transition: -moz-transform 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease;
-			transition: transform 0.5s ease;
 			background-color: #777;
 			background-position: center;
 			background-repeat: no-repeat;
@@ -1239,32 +1223,10 @@
 			-webkit-justify-content: center;
 			-ms-justify-content: center;
 			justify-content: center;
-			-moz-transition: -moz-transform 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease;
-			transition: transform 0.5s ease;
 			background-color: #ffffff;
 			padding: 3em;
 			width: 50%;
 		}
-
-		.panel.inactive {
-			opacity: 0;
-		}
-
-			.panel.inactive > .image {
-				-moz-transform: translateY(1em);
-				-webkit-transform: translateY(1em);
-				-ms-transform: translateY(1em);
-				transform: translateY(1em);
-			}
-
-			.panel.inactive > .content {
-				-moz-transform: translateY(-1em);
-				-webkit-transform: translateY(-1em);
-				-ms-transform: translateY(-1em);
-				transform: translateY(-1em);
-			}
 
 		.panel.special {
 			text-align: center;
@@ -1364,20 +1326,6 @@
 						display: none;
 					}
 
-				.panel.inactive > .image {
-					-moz-transform: translateX(1em);
-					-webkit-transform: translateX(1em);
-					-ms-transform: translateX(1em);
-					transform: translateX(1em);
-				}
-
-				.panel.inactive > .content {
-					-moz-transform: translateX(-1em);
-					-webkit-transform: translateX(-1em);
-					-ms-transform: translateX(-1em);
-					transform: translateX(-1em);
-				}
-
 		}
 
 		@media screen and (max-width: 736px) {
@@ -1418,77 +1366,9 @@
 
 		}
 
-		body.is-loading-0 .panel {
-			opacity: 0;
-		}
-
-			body.is-loading-0 .panel > .image {
-				-moz-transform: translateX(4em);
-				-webkit-transform: translateX(4em);
-				-ms-transform: translateX(4em);
-				transform: translateX(4em);
-			}
-
-			body.is-loading-0 .panel > .content {
-				-moz-transform: translateX(-4em);
-				-webkit-transform: translateX(-4em);
-				-ms-transform: translateX(-4em);
-				transform: translateX(-4em);
-			}
-
-			@media screen and (max-width: 980px) {
-
-				body.is-loading-0 .panel {
-					-moz-transform: translateZ(-2em);
-					-webkit-transform: translateZ(-2em);
-					-ms-transform: translateZ(-2em);
-					transform: translateZ(-2em);
-				}
-
-					body.is-loading-0 .panel > .image {
-						-moz-transform: none;
-						-webkit-transform: none;
-						-ms-transform: none;
-						transform: none;
-					}
-
-					body.is-loading-0 .panel > .content {
-						-moz-transform: none;
-						-webkit-transform: none;
-						-ms-transform: none;
-						transform: none;
-					}
-
-			}
-
-		body.is-loading-1 .panel {
-			-moz-transition: opacity 2s ease, -moz-transform 0.5s ease;
-			-webkit-transition: opacity 2s ease, -webkit-transform 0.5s ease;
-			-ms-transition: opacity 2s ease, -ms-transform 0.5s ease;
-			transition: opacity 2s ease, transform 0.5s ease;
-		}
-
-			body.is-loading-1 .panel > .image {
-				-moz-transition: -moz-transform 1s ease;
-				-webkit-transition: -webkit-transform 1s ease;
-				-ms-transition: -ms-transform 1s ease;
-				transition: transform 1s ease;
-			}
-
-			body.is-loading-1 .panel > .content {
-				-moz-transition: -moz-transform 1s ease;
-				-webkit-transition: -webkit-transform 1s ease;
-				-ms-transition: -ms-transform 1s ease;
-				transition: transform 1s ease;
-			}
-
 /* Footer */
 
 	#footer {
-		-moz-transition: opacity 0.5s ease;
-		-webkit-transition: opacity 0.5s ease;
-		-ms-transition: opacity 0.5s ease;
-		transition: opacity 0.5s ease;
 		margin: 3em 0 0 0;
 		opacity: 1.0;
 		text-align: center;
@@ -1500,10 +1380,6 @@
 			letter-spacing: 0.25em;
 			margin-bottom: 0;
 			/*text-transform: uppercase;*/
-		}
-
-		#footer.inactive {
-			opacity: 0;
 		}
 
 		@media screen and (max-width: 1680px) {
@@ -1520,8 +1396,4 @@
 				margin: 1.5em 0 0 0;
 			}
 
-		}
-
-		body.is-loading-0 #footer {
-			opacity: 0;
 		}
